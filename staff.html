@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="ja">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>業界別AIコンサルウェビナー 人事労務編 第1部 | ヒアリング編</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+<script>
+tailwind.config = {
+  darkMode: "class",
+  theme: {
+    extend: {
+      colors: {
+        primary: "#BFE4FF",
+        "primary-vivid": "#2E86C1",
+        secondary: "#FFCABF",
+        "secondary-vivid": "#E67E22",
+        accent: "#FFFF80",
+        lavender: "#C9ACE6",
+        "background-light": "#FAFAF8",
+        "background-dark": "#2D2B3D",
+      },
+      fontFamily: {
+        display: ["Inter", "Noto Sans JP", "sans-serif"],
+        sans: ["Inter", "Noto Sans JP", "sans-serif"],
+      },
+    },
+  },
+};
+</script>
+<style>
+body { font-family: 'Inter', 'Noto Sans JP', sans-serif; }
+.hero-gradient { background: #2E86C1; }
+.step-number {
+  width: 2.5rem;
+  height: 2.5rem;
+  background: #2E86C1;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  flex-shrink: 0;
+}
+</style>
+</head>
+<body class="bg-background-light text-slate-800">
+
+<!-- Header -->
+<header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-200 shadow-sm">
+<div class="max-w-5xl mx-auto px-4 sm:px-6 h-14 flex items-center justify-between">
+  <div class="flex items-center space-x-2">
+    <span class="material-icons-outlined text-primary-vivid text-2xl">record_voice_over</span>
+    <span class="font-bold text-lg tracking-tight">業界別AIコンサル</span>
+  </div>
+  <nav class="flex items-center space-x-4 text-sm font-medium">
+    <a class="hover:text-primary-vivid transition-colors hidden sm:block" href="#goal">ゴール</a>
+    <a class="hover:text-primary-vivid transition-colors hidden sm:block" href="#approach">アプローチ</a>
+    <a class="hover:text-primary-vivid transition-colors hidden sm:block" href="#speakers">登壇者</a>
+    <a class="hover:text-primary-vivid transition-colors hidden sm:block" href="#flow">流れ</a>
+    <a class="hover:text-primary-vivid transition-colors" href="#tools">ツール</a>
+  </nav>
+</div>
+</header>
+
+<!-- Hero Section -->
+<section class="hero-gradient py-16 lg:py-24 text-white">
+<div class="max-w-5xl mx-auto px-4 sm:px-6 text-center">
+  <p class="font-bold tracking-widest uppercase mb-3 text-sm text-white/80">SHIFT AI 業界別AIコンサルウェビナー</p>
+  <h1 class="text-3xl md:text-5xl font-extrabold mb-4 leading-tight">
+    人事労務編 第1部<br/>
+    <span class="text-white/90 text-xl md:text-2xl font-bold">公開ヒアリング × AI要件整理ライブ</span>
+  </h1>
+  <p class="max-w-2xl mx-auto text-base text-white/90 mb-4 leading-relaxed">
+    3名の人事プロフェッショナルのリアルな課題を<br class="hidden sm:block"/>
+    AIで整理するプロセスをライブでお見せします
+  </p>
+  <div class="flex flex-wrap justify-center gap-3 text-sm text-white/80 mt-6">
+    <span class="bg-white/15 backdrop-blur px-4 py-1.5 rounded-full flex items-center gap-1.5">
+      <span class="material-icons-outlined text-base">event</span>
+      2026年2月17日（火）20:00〜21:00
+    </span>
+    <span class="bg-white/15 backdrop-blur px-4 py-1.5 rounded-full flex items-center gap-1.5">
+      <span class="material-icons-outlined text-base">videocam</span>
+      Zoomウェビナー
+    </span>
+  </div>
+
+  <!-- Flow Diagram -->
+  <div class="mt-10 max-w-4xl mx-auto">
+    <div class="bg-white/10 backdrop-blur rounded-2xl p-6 border border-white/20">
+      <div class="flex flex-col md:flex-row items-center justify-center gap-3 md:gap-4">
+        <div class="bg-white rounded-xl p-4 text-center min-w-[120px]">
+          <span class="material-icons-outlined text-primary-vivid text-3xl mb-2">waving_hand</span>
+          <p class="text-sm font-bold text-slate-700">1. アイスブレイク</p>
+        </div>
+        <span class="material-icons-outlined text-xl text-white/60 rotate-90 md:rotate-0">arrow_forward</span>
+        <div class="bg-white rounded-xl p-4 text-center min-w-[120px]">
+          <span class="material-icons-outlined text-primary-vivid text-3xl mb-2">mic</span>
+          <p class="text-sm font-bold text-slate-700">2. ヒアリング</p>
+        </div>
+        <span class="material-icons-outlined text-xl text-white/60 rotate-90 md:rotate-0">arrow_forward</span>
+        <div class="bg-white rounded-xl p-4 text-center min-w-[120px]">
+          <span class="material-icons-outlined text-primary-vivid text-3xl mb-2">smart_toy</span>
+          <p class="text-sm font-bold text-slate-700">3. AIで整理</p>
+        </div>
+        <span class="material-icons-outlined text-xl text-white/60 rotate-90 md:rotate-0">arrow_forward</span>
+        <div class="bg-white rounded-xl p-4 text-center min-w-[120px] border-2 border-secondary-vivid">
+          <span class="material-icons-outlined text-secondary-vivid text-3xl mb-2">emoji_events</span>
+          <p class="text-sm font-bold text-slate-700">4. 第2部で解決</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- Before/After Section -->
+<section class="py-16 max-w-5xl mx-auto px-4 sm:px-6" id="goal">
+<div class="text-center mb-10">
+  <h2 class="text-2xl font-bold mb-3">今日のゴール</h2>
+  <div class="w-16 h-1 bg-primary-vivid mx-auto rounded-full"></div>
+</div>
+
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+  <div class="bg-slate-100 border-2 border-slate-300 rounded-2xl p-6">
+    <div class="flex items-center gap-2 mb-4">
+      <span class="bg-slate-500 text-white px-3 py-1 rounded-full text-sm font-bold">Before</span>
+    </div>
+    <ul class="space-y-3 text-slate-700">
+      <li class="flex items-start gap-2">
+        <span class="material-icons-outlined text-slate-400 text-lg mt-0.5">close</span>
+        <span>AIで業務改善したいけど、何から手をつければいいかわからない</span>
+      </li>
+      <li class="flex items-start gap-2">
+        <span class="material-icons-outlined text-slate-400 text-lg mt-0.5">close</span>
+        <span>自分の課題がAIで解決できるのか判断できない</span>
+      </li>
+      <li class="flex items-start gap-2">
+        <span class="material-icons-outlined text-slate-400 text-lg mt-0.5">close</span>
+        <span>他社の人事担当がどんな悩みを持っているか知らない</span>
+      </li>
+    </ul>
+  </div>
+
+  <div class="bg-primary/20 border-2 border-primary/40 rounded-2xl p-6">
+    <div class="flex items-center gap-2 mb-4">
+      <span class="bg-primary-vivid text-white px-3 py-1 rounded-full text-sm font-bold">After</span>
+    </div>
+    <ul class="space-y-3 text-slate-700">
+      <li class="flex items-start gap-2">
+        <span class="material-icons-outlined text-primary-vivid text-lg mt-0.5">check_circle</span>
+        <span>課題の整理方法がわかり、自分の業務でも同じプロセスを試せる</span>
+      </li>
+      <li class="flex items-start gap-2">
+        <span class="material-icons-outlined text-primary-vivid text-lg mt-0.5">check_circle</span>
+        <span>AIヒアリングシートGemを使って自分の課題も整理できる</span>
+      </li>
+      <li class="flex items-start gap-2">
+        <span class="material-icons-outlined text-primary-vivid text-lg mt-0.5">check_circle</span>
+        <span>第2部で解決策がどう作られるかをワクワクしながら待てる</span>
+      </li>
+    </ul>
+  </div>
+</div>
+</section>
+
+<!-- Approach Section: 真の業務効率化 + ヒアリングフレームワーク -->
+<section class="py-16 bg-white" id="approach">
+<div class="max-w-5xl mx-auto px-4 sm:px-6">
+
+  <!-- 真の業務効率化 5ステップ -->
+  <div class="text-center mb-10">
+    <span class="bg-secondary-vivid text-white px-4 py-1 rounded-full text-sm font-bold">メソッド</span>
+    <h2 class="text-2xl font-bold mt-3 mb-2">真の業務効率化 5ステップ</h2>
+    <p class="text-slate-500">今日のヒアリングはこのプロセスの第1歩です</p>
+  </div>
+
+  <div class="max-w-3xl mx-auto space-y-0 relative">
+    <!-- 縦の接続線 -->
+    <div class="absolute left-6 top-8 bottom-8 w-0.5 bg-slate-200 hidden md:block"></div>
+
+    <div class="flex items-start gap-5 relative py-4">
+      <div class="w-12 h-12 bg-secondary-vivid text-white rounded-full flex items-center justify-center font-bold text-lg flex-shrink-0 z-10">1</div>
+      <div class="flex-1 bg-secondary/10 border border-secondary-vivid/20 rounded-xl p-5">
+        <h3 class="font-bold text-base mb-1">ヒアリング</h3>
+        <p class="text-sm text-slate-600">どんな作業を、どんな手順で、どのくらいの時間をかけてやっているか詳しく聞く</p>
+      </div>
+    </div>
+
+    <div class="flex items-start gap-5 relative py-4">
+      <div class="w-12 h-12 bg-secondary-vivid text-white rounded-full flex items-center justify-center font-bold text-lg flex-shrink-0 z-10">2</div>
+      <div class="flex-1 bg-slate-50 border border-slate-200 rounded-xl p-5">
+        <h3 class="font-bold text-base mb-1">分解</h3>
+        <p class="text-sm text-slate-600">その業務を一つ一つの要素に分け、本当に必要か、最適な手順かを見極める</p>
+      </div>
+    </div>
+
+    <div class="flex items-start gap-5 relative py-4">
+      <div class="w-12 h-12 bg-secondary-vivid text-white rounded-full flex items-center justify-center font-bold text-lg flex-shrink-0 z-10">3</div>
+      <div class="flex-1 bg-slate-50 border border-slate-200 rounded-xl p-5">
+        <h3 class="font-bold text-base mb-1">分析</h3>
+        <p class="text-sm text-slate-600">何が本当に大事なのか、何がいらないのか、どうすれば最もスマートに進められるか</p>
+      </div>
+    </div>
+
+    <div class="flex items-start gap-5 relative py-4">
+      <div class="w-12 h-12 bg-secondary-vivid text-white rounded-full flex items-center justify-center font-bold text-lg flex-shrink-0 z-10">4</div>
+      <div class="flex-1 bg-slate-50 border border-slate-200 rounded-xl p-5">
+        <h3 class="font-bold text-base mb-1">再構築</h3>
+        <p class="text-sm text-slate-600">最もシンプルで、ストレスが少ない方法で組み直す</p>
+      </div>
+    </div>
+
+    <div class="flex items-start gap-5 relative py-4">
+      <div class="w-12 h-12 bg-secondary-vivid text-white rounded-full flex items-center justify-center font-bold text-lg flex-shrink-0 z-10">5</div>
+      <div class="flex-1 bg-secondary/10 border border-secondary-vivid/20 rounded-xl p-5">
+        <h3 class="font-bold text-base mb-1">実装</h3>
+        <p class="text-sm text-slate-600">現場の人が「楽になった!」と感じる形でお返しする</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ヒアリングフレームワーク概要 -->
+  <div class="mt-16">
+    <div class="text-center mb-10">
+      <h2 class="text-2xl font-bold mb-2">ヒアリングフレームワーク</h2>
+      <p class="text-slate-500">「課題を聞き取り、潜在的なニーズを掴む」ための型</p>
+    </div>
+
+    <div class="max-w-3xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6">
+      <!-- ヒアリングの本質 -->
+      <div class="bg-primary/10 border border-primary/20 rounded-2xl p-6">
+        <div class="flex items-center gap-3 mb-4">
+          <div class="w-10 h-10 bg-primary-vivid/10 text-primary-vivid rounded-xl flex items-center justify-center flex-shrink-0">
+            <span class="material-icons-outlined text-xl">psychology</span>
+          </div>
+          <h3 class="font-bold">ヒアリングの本質</h3>
+        </div>
+        <p class="text-sm text-slate-600 leading-relaxed">表面的な要望だけでなく、その奥にある「本当に解決したいこと」を引き出す。相手が言語化できていない課題こそ、最も価値がある</p>
+      </div>
+
+      <!-- 標準ヒアリング項目 -->
+      <div class="bg-primary/10 border border-primary/20 rounded-2xl p-6">
+        <div class="flex items-center gap-3 mb-4">
+          <div class="w-10 h-10 bg-primary-vivid/10 text-primary-vivid rounded-xl flex items-center justify-center flex-shrink-0">
+            <span class="material-icons-outlined text-xl">checklist</span>
+          </div>
+          <h3 class="font-bold">標準ヒアリング項目</h3>
+        </div>
+        <p class="text-sm text-slate-600 leading-relaxed">業務の現状・手順・時間・頻度・関係者・ツール・理想の状態・過去の取り組みなど、構造的に聞くべき項目を体系化</p>
+      </div>
+
+      <!-- 判断軸 -->
+      <div class="bg-primary/10 border border-primary/20 rounded-2xl p-6">
+        <div class="flex items-center gap-3 mb-4">
+          <div class="w-10 h-10 bg-primary-vivid/10 text-primary-vivid rounded-xl flex items-center justify-center flex-shrink-0">
+            <span class="material-icons-outlined text-xl">tune</span>
+          </div>
+          <h3 class="font-bold">判断軸</h3>
+        </div>
+        <p class="text-sm text-slate-600 leading-relaxed">ヒアリング結果をもとに「AIで解決すべきか」「どのアプローチが最適か」を見極めるための基準</p>
+      </div>
+
+      <!-- 成功基準 -->
+      <div class="bg-primary/10 border border-primary/20 rounded-2xl p-6">
+        <div class="flex items-center gap-3 mb-4">
+          <div class="w-10 h-10 bg-primary-vivid/10 text-primary-vivid rounded-xl flex items-center justify-center flex-shrink-0">
+            <span class="material-icons-outlined text-xl">verified</span>
+          </div>
+          <h3 class="font-bold">成功基準</h3>
+        </div>
+        <p class="text-sm text-slate-600 leading-relaxed">「現場の人が楽になった」と実感できること。改善の効果を測定可能な形で定義する</p>
+      </div>
+    </div>
+
+    <p class="text-center text-sm text-slate-500 mt-8">
+      <span class="material-icons-outlined text-sm align-middle">lightbulb</span>
+      今日のヒアリングでは、このフレームワークをベースに課題を引き出していきます
+    </p>
+  </div>
+
+</div>
+</section>
+
+<!-- Speakers Section -->
+<section class="py-16 bg-white" id="speakers">
+<div class="max-w-5xl mx-auto px-4 sm:px-6">
+  <div class="text-center mb-10">
+    <h2 class="text-2xl font-bold mb-3">本日の登壇者</h2>
+    <p class="text-slate-500">3名のプロフェッショナルにリアルな課題を聞きます</p>
+  </div>
+
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+    <!-- Speaker 1 -->
+    <div class="bg-white rounded-2xl border-2 border-primary/30 p-6 shadow-sm">
+      <div class="flex items-center gap-3 mb-4">
+        <div class="w-12 h-12 bg-primary-vivid text-white rounded-full flex items-center justify-center font-bold text-lg flex-shrink-0">1</div>
+        <div>
+          <h3 class="font-bold text-lg">しらかた さん</h3>
+          <span class="text-xs bg-primary/20 text-primary-vivid px-2 py-0.5 rounded-full font-medium">20:10〜</span>
+        </div>
+      </div>
+      <div class="space-y-2 text-sm">
+        <div class="flex items-center gap-2">
+          <span class="material-icons-outlined text-primary-vivid text-base">work</span>
+          <span class="text-slate-700">コンサルタント（人事労務協業）</span>
+        </div>
+        <div class="flex items-center gap-2">
+          <span class="material-icons-outlined text-primary-vivid text-base">business</span>
+          <span class="text-slate-700">101名以上</span>
+        </div>
+        <div class="flex items-center gap-2">
+          <span class="material-icons-outlined text-primary-vivid text-base">smart_toy</span>
+          <span class="text-slate-700">AI 日常的に活用</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Speaker 2 -->
+    <div class="bg-white rounded-2xl border-2 border-primary/30 p-6 shadow-sm">
+      <div class="flex items-center gap-3 mb-4">
+        <div class="w-12 h-12 bg-primary-vivid text-white rounded-full flex items-center justify-center font-bold text-lg flex-shrink-0">2</div>
+        <div>
+          <h3 class="font-bold text-lg">tae さん</h3>
+          <span class="text-xs bg-primary/20 text-primary-vivid px-2 py-0.5 rounded-full font-medium">20:25〜</span>
+        </div>
+      </div>
+      <div class="space-y-2 text-sm">
+        <div class="flex items-center gap-2">
+          <span class="material-icons-outlined text-primary-vivid text-base">work</span>
+          <span class="text-slate-700">会社員（人事・労務担当）</span>
+        </div>
+        <div class="flex items-center gap-2">
+          <span class="material-icons-outlined text-primary-vivid text-base">business</span>
+          <span class="text-slate-700">101名以上</span>
+        </div>
+        <div class="flex items-center gap-2">
+          <span class="material-icons-outlined text-primary-vivid text-base">smart_toy</span>
+          <span class="text-slate-700">AI たまに使う</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Speaker 3 -->
+    <div class="bg-white rounded-2xl border-2 border-primary/30 p-6 shadow-sm">
+      <div class="flex items-center gap-3 mb-4">
+        <div class="w-12 h-12 bg-primary-vivid text-white rounded-full flex items-center justify-center font-bold text-lg flex-shrink-0">3</div>
+        <div>
+          <h3 class="font-bold text-lg">さえやん さん</h3>
+          <span class="text-xs bg-primary/20 text-primary-vivid px-2 py-0.5 rounded-full font-medium">20:40〜</span>
+        </div>
+      </div>
+      <div class="space-y-2 text-sm">
+        <div class="flex items-center gap-2">
+          <span class="material-icons-outlined text-primary-vivid text-base">work</span>
+          <span class="text-slate-700">フリーランス（人事領域）</span>
+        </div>
+        <div class="flex items-center gap-2">
+          <span class="material-icons-outlined text-primary-vivid text-base">business</span>
+          <span class="text-slate-700">1〜10名</span>
+        </div>
+        <div class="flex items-center gap-2">
+          <span class="material-icons-outlined text-primary-vivid text-base">smart_toy</span>
+          <span class="text-slate-700">AI 日常的に活用</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <p class="text-center text-sm text-slate-500 mt-6">
+    <span class="material-icons-outlined text-sm align-middle">info</span>
+    三者三様の立場から、リアルな人事課題をヒアリングします
+  </p>
+</div>
+</section>
+
+<!-- Today's Flow Section -->
+<section class="py-16 bg-lavender/5" id="flow">
+<div class="max-w-5xl mx-auto px-4 sm:px-6">
+  <div class="text-center mb-10">
+    <h2 class="text-2xl font-bold mb-3">今日の流れ</h2>
+    <p class="text-slate-500">60分で3名のヒアリング＋AI整理デモ</p>
+  </div>
+
+  <div class="space-y-4">
+    <div class="flex items-start gap-4 bg-white rounded-2xl p-5 border border-slate-200 shadow-sm">
+      <div class="step-number text-sm">1</div>
+      <div class="flex-1">
+        <div class="flex flex-wrap items-center gap-2 mb-1">
+          <h3 class="font-bold">オープニング＆アイスブレイク</h3>
+          <span class="text-xs text-slate-400 bg-slate-100 px-2 py-0.5 rounded">20:00〜20:05</span>
+        </div>
+        <p class="text-slate-600 text-sm">チャットで参加者を巻き込み、今日のテーマにフォーカス</p>
+      </div>
+    </div>
+
+    <div class="flex items-start gap-4 bg-white rounded-2xl p-5 border border-slate-200 shadow-sm">
+      <div class="step-number text-sm">2</div>
+      <div class="flex-1">
+        <div class="flex flex-wrap items-center gap-2 mb-1">
+          <h3 class="font-bold">今日のゴール＆登壇者紹介</h3>
+          <span class="text-xs text-slate-400 bg-slate-100 px-2 py-0.5 rounded">20:05〜20:10</span>
+        </div>
+        <p class="text-slate-600 text-sm">Before→Afterの提示＋3名のプロフィール紹介</p>
+      </div>
+    </div>
+
+    <div class="flex items-start gap-4 bg-primary/10 rounded-2xl p-5 border-2 border-primary/30">
+      <div class="step-number text-sm">3</div>
+      <div class="flex-1">
+        <div class="flex flex-wrap items-center gap-2 mb-1">
+          <h3 class="font-bold">ヒアリング：しらかた さん</h3>
+          <span class="text-xs text-white bg-primary-vivid px-2 py-0.5 rounded">20:10〜20:25</span>
+        </div>
+        <p class="text-slate-600 text-sm">リアルな課題をヒアリング＋AIでライブ整理デモ</p>
+      </div>
+    </div>
+
+    <div class="flex items-start gap-4 bg-primary/10 rounded-2xl p-5 border-2 border-primary/30">
+      <div class="step-number text-sm">4</div>
+      <div class="flex-1">
+        <div class="flex flex-wrap items-center gap-2 mb-1">
+          <h3 class="font-bold">ヒアリング：tae さん</h3>
+          <span class="text-xs text-white bg-primary-vivid px-2 py-0.5 rounded">20:25〜20:40</span>
+        </div>
+        <p class="text-slate-600 text-sm">リアルな課題をヒアリング＋AIでライブ整理デモ</p>
+      </div>
+    </div>
+
+    <div class="flex items-start gap-4 bg-primary/10 rounded-2xl p-5 border-2 border-primary/30">
+      <div class="step-number text-sm">5</div>
+      <div class="flex-1">
+        <div class="flex flex-wrap items-center gap-2 mb-1">
+          <h3 class="font-bold">ヒアリング：さえやん さん</h3>
+          <span class="text-xs text-white bg-primary-vivid px-2 py-0.5 rounded">20:40〜20:55</span>
+        </div>
+        <p class="text-slate-600 text-sm">リアルな課題をヒアリング＋AIでライブ整理デモ</p>
+      </div>
+    </div>
+
+    <div class="flex items-start gap-4 bg-secondary/20 rounded-2xl p-5 border-2 border-secondary-vivid/30">
+      <div class="step-number text-sm" style="background:#E67E22">6</div>
+      <div class="flex-1">
+        <div class="flex flex-wrap items-center gap-2 mb-1">
+          <h3 class="font-bold">まとめ＆第2部予告＆アンケート</h3>
+          <span class="text-xs text-slate-400 bg-slate-100 px-2 py-0.5 rounded">20:55〜21:00</span>
+        </div>
+        <p class="text-slate-600 text-sm">振り返り＋2/27 第2部予告＋Gemプレゼント案内</p>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- Hearing Process Section -->
+<section class="py-16 bg-white">
+<div class="max-w-5xl mx-auto px-4 sm:px-6">
+  <div class="text-center mb-10">
+    <span class="bg-primary/20 text-primary-vivid px-4 py-1 rounded-full text-sm font-bold">各15分</span>
+    <h2 class="text-2xl font-bold mt-3 mb-2">ヒアリングの流れ</h2>
+    <p class="text-slate-500">1人あたりの進行イメージ</p>
+  </div>
+
+  <div class="max-w-2xl mx-auto space-y-4">
+    <div class="bg-slate-50 rounded-xl p-4 border border-slate-200 flex items-center gap-4">
+      <span class="bg-primary-vivid text-white w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold flex-shrink-0">1</span>
+      <div>
+        <h4 class="font-bold text-sm">自己紹介＆状況確認</h4>
+        <p class="text-xs text-slate-500">0〜2分 | 所属・役割・チーム規模</p>
+      </div>
+    </div>
+    <div class="bg-slate-50 rounded-xl p-4 border border-slate-200 flex items-center gap-4">
+      <span class="bg-primary-vivid text-white w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold flex-shrink-0">2</span>
+      <div>
+        <h4 class="font-bold text-sm">課題の深掘り</h4>
+        <p class="text-xs text-slate-500">2〜8分 | 「今1番困ってることは？」「理想の状態は？」</p>
+      </div>
+    </div>
+    <div class="bg-slate-50 rounded-xl p-4 border border-slate-200 flex items-center gap-4">
+      <span class="bg-primary-vivid text-white w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold flex-shrink-0">3</span>
+      <div>
+        <h4 class="font-bold text-sm">方向性の仮説提示</h4>
+        <p class="text-xs text-slate-500">8〜12分 | 「こういうアプローチで解決できそう」</p>
+      </div>
+    </div>
+    <div class="bg-primary/10 rounded-xl p-4 border-2 border-primary/30 flex items-center gap-4">
+      <span class="bg-primary-vivid text-white w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold flex-shrink-0">4</span>
+      <div>
+        <h4 class="font-bold text-sm">AIでライブ整理</h4>
+        <p class="text-xs text-primary-vivid font-medium">12〜14分 | ヒアリングシートGemで要件を自動整理</p>
+      </div>
+    </div>
+    <div class="bg-slate-50 rounded-xl p-4 border border-slate-200 flex items-center gap-4">
+      <span class="bg-primary-vivid text-white w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold flex-shrink-0">5</span>
+      <div>
+        <h4 class="font-bold text-sm">まとめ＆次回予告</h4>
+        <p class="text-xs text-slate-500">14〜15分 | 「第2部で解決策をお見せします！」</p>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- Part 2 Preview -->
+<section class="py-16 bg-background-dark text-white">
+<div class="max-w-5xl mx-auto px-4 sm:px-6">
+  <div class="text-center mb-10">
+    <span class="bg-secondary-vivid text-white px-4 py-1 rounded-full text-sm font-bold">予告</span>
+    <h2 class="text-2xl font-bold mt-3 mb-2">第2部：解決・プロセス公開編</h2>
+    <p class="text-slate-400">2026年2月27日（木）20:00〜21:00</p>
+  </div>
+
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-3xl mx-auto">
+    <div class="bg-white/10 rounded-2xl p-6 text-center border border-white/10">
+      <span class="material-icons-outlined text-secondary-vivid text-3xl mb-3">assignment_turned_in</span>
+      <h3 class="font-bold mb-2">3名全員に方針提示</h3>
+      <p class="text-sm text-slate-400">今日のヒアリング結果をもとに解決方針をお返しします</p>
+    </div>
+    <div class="bg-white/10 rounded-2xl p-6 text-center border border-white/10">
+      <span class="material-icons-outlined text-secondary-vivid text-3xl mb-3">build</span>
+      <h3 class="font-bold mb-2">1件をガッツリ作り込み</h3>
+      <p class="text-sm text-slate-400">解決策を実際に作り込んだ成果物をライブでお見せします</p>
+    </div>
+    <div class="bg-white/10 rounded-2xl p-6 text-center border border-white/10">
+      <span class="material-icons-outlined text-secondary-vivid text-3xl mb-3">visibility</span>
+      <h3 class="font-bold mb-2">プロセス全公開</h3>
+      <p class="text-sm text-slate-400">どう考え、どういう手順で作ったかを全て公開します</p>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- Tools Section -->
+<section class="py-16 bg-white" id="tools">
+<div class="max-w-5xl mx-auto px-4 sm:px-6">
+  <div class="text-center mb-10">
+    <h2 class="text-2xl font-bold mb-3">持ち帰りツール</h2>
+    <p class="text-slate-500">アンケート回答でプレゼント</p>
+  </div>
+
+  <div class="grid grid-cols-1 sm:grid-cols-2 gap-5 max-w-3xl mx-auto">
+    <div class="bg-primary/10 rounded-2xl p-6 border border-primary/20 flex items-center gap-4">
+      <div class="w-12 h-12 bg-primary-vivid/10 text-primary-vivid rounded-xl flex items-center justify-center flex-shrink-0">
+        <span class="material-icons-outlined text-2xl">smart_toy</span>
+      </div>
+      <div>
+        <h4 class="font-bold text-sm">ヒアリングシート用 Gem</h4>
+        <p class="text-xs text-slate-500">ヒアリング内容を自動で要件整理</p>
+      </div>
+    </div>
+
+    <div class="bg-primary/10 rounded-2xl p-6 border border-primary/20 flex items-center gap-4">
+      <div class="w-12 h-12 bg-primary-vivid/10 text-primary-vivid rounded-xl flex items-center justify-center flex-shrink-0">
+        <span class="material-icons-outlined text-2xl">card_giftcard</span>
+      </div>
+      <div>
+        <h4 class="font-bold text-sm">Gem の受け取り方</h4>
+        <p class="text-xs text-slate-500">アンケート回答後のサンクスページからアクセスできます</p>
+      </div>
+    </div>
+  </div>
+
+  <p class="text-center text-sm text-slate-500 mt-6">
+    <span class="material-icons-outlined text-sm align-middle">info</span>
+    アンケートにお答えいただいた方はサンクスページでリンクを確認できます
+  </p>
+</div>
+</section>
+
+<!-- Summary Section -->
+<section class="py-16 hero-gradient text-white">
+<div class="max-w-4xl mx-auto px-4 sm:px-6 text-center">
+  <h2 class="text-2xl md:text-3xl font-bold mb-8">今日 持ち帰れること</h2>
+
+  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-2xl mx-auto mb-8">
+    <div class="bg-white/20 backdrop-blur rounded-xl p-5 flex items-center gap-3">
+      <span class="material-icons-outlined text-3xl flex-shrink-0">psychology</span>
+      <p class="font-bold text-sm text-left">AIで業務課題を整理するプロセスがわかる</p>
+    </div>
+    <div class="bg-white/20 backdrop-blur rounded-xl p-5 flex items-center gap-3">
+      <span class="material-icons-outlined text-3xl flex-shrink-0">groups</span>
+      <p class="font-bold text-sm text-left">他社の人事担当のリアルな悩みと解決の方向性を知れる</p>
+    </div>
+    <div class="bg-white/20 backdrop-blur rounded-xl p-5 flex items-center gap-3">
+      <span class="material-icons-outlined text-3xl flex-shrink-0">smart_toy</span>
+      <p class="font-bold text-sm text-left">ヒアリングシートGemで自分の課題も整理できる</p>
+    </div>
+    <div class="bg-white/20 backdrop-blur rounded-xl p-5 flex items-center gap-3">
+      <span class="material-icons-outlined text-3xl flex-shrink-0">rocket_launch</span>
+      <p class="font-bold text-sm text-left">第2部で解決策が見れるワクワク感</p>
+    </div>
+  </div>
+
+  <div class="bg-white/10 rounded-xl p-6 inline-block">
+    <p class="text-lg">
+      <span class="line-through opacity-70">何から手をつけていいかわからない</span>
+      <span class="mx-3">→</span>
+      <span class="font-bold">課題整理プロセスを知り、自分でも試せる状態</span>
+    </p>
+  </div>
+</div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-white py-8 border-t border-slate-200">
+<div class="max-w-5xl mx-auto px-4 sm:px-6">
+  <div class="flex flex-col md:flex-row justify-between items-center">
+    <div class="flex items-center space-x-2 mb-4 md:mb-0">
+      <span class="material-icons-outlined text-primary-vivid">record_voice_over</span>
+      <span class="font-bold">業界別AIコンサルウェビナー 人事労務編 第1部</span>
+    </div>
+    <div class="text-slate-500 text-sm">
+      配布資料 | 2026年2月
+    </div>
+  </div>
+</div>
+</footer>
+
+</body>
+</html>
